@@ -20,5 +20,12 @@ object Functions {
     transformInt(3, x => x * x * x)
     transformInt(10, x => x / 2)
     transformInt(2, x => {val y = x * 2; y * y})
+
+    // EXERCISE
+    def toUpperCase(x: String): String = {
+      x.toUpperCase
+    }
+    val foo = "foo"
+    println(s"foo: ${toUpperCase(foo)}")
   }
 }
