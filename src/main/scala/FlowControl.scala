@@ -1,4 +1,4 @@
-object MainTwo {
+object FlowControl {
   def main(args: Array[String]): Unit = {
     // FLow control
     if (1 > 3)
