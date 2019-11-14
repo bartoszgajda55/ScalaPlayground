@@ -1,3 +1,5 @@
+package old_udemy
+
 object Main {
   def main(args: Array[String]): Unit = {
     // Values are immutable constants.

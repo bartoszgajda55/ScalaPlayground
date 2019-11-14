@@ -1,3 +1,5 @@
+package old_udemy
+
 object DataStructures {
   def main(args: Array[String]): Unit = {
     // Tuples - immutable lists

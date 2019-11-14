@@ -1,3 +1,5 @@
+package old_udemy
+
 object Functions {
   def main(args: Array[String]): Unit = {
     // Format is def <function name>(parameter name: type...): return type =  { expression }
