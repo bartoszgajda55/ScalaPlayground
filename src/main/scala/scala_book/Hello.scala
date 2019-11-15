@@ -49,4 +49,33 @@ object Hello extends App {
     f <- fruits
     if f.length > 4
   } yield f.length
+
+  // basic class usage
+  val p = new Person("John", "Doe")
+  println(p.firstName)
+  p.lastName = "Manes"
+  p.printFullName()
+
+  // collections
+  val nums = List.range(0, 10)
+  val nums2 = (1 to 10 by 2).toList
+  val letters = ('a' to 'f').toList
+  val letters2 = ('a' to 'f' by 2).toList
+  val names = List("john", "bob", "robert", "dick")
+
+  names.foreach(println)
+  nums.filter(_ < 4).foreach(println)
+
+  val doubles = nums.map(_ * 2)
+  val capNames = names.map(_.capitalize)
+  val lessThanFive = nums.map(_ < 5)
+
+  nums.foldLeft(0)(_ + _)
+
+  // tuples
+  val t = (11, "Eleven", new Person("Jenny", "Done"))
+}
+
+class Person(var firstName: String, var lastName: String) {
+  def printFullName() = println(s"$firstName $lastName")
 }
