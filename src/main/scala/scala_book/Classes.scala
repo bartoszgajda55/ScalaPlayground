@@ -1,8 +1,10 @@
 package scala_book
 
-class Classes extends App {
+object Classes extends App {
   val p = new Person("John", "Doe")
   p.firstName = "Mark"
+  val DefaultCrustSize = 12
+  val DefaultCrustType = "THIN"
 
   val p1 = new Pizza(DefaultCrustSize, DefaultCrustType)
   val p2 = new Pizza(DefaultCrustSize)

@@ -51,7 +51,7 @@ object Hello extends App {
   } yield f.length
 
   // basic class usage
-  val p = new Person("John", "Doe")
+  val p = new PersonTwo("John", "Doe")
   println(p.firstName)
   p.lastName = "Manes"
   p.printFullName()
@@ -73,9 +73,9 @@ object Hello extends App {
   nums.foldLeft(0)(_ + _)
 
   // tuples
-  val t = (11, "Eleven", new Person("Jenny", "Done"))
+  val t = (11, "Eleven", new PersonTwo("Jenny", "Done"))
 }
 
-class Person(var firstName: String, var lastName: String) {
+class PersonTwo(var firstName: String, var lastName: String) {
   def printFullName() = println(s"$firstName $lastName")
 }
