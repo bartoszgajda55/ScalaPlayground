@@ -6,10 +6,10 @@ object Classes extends App {
   val DefaultCrustSize = 12
   val DefaultCrustType = "THIN"
 
-  val p1 = new Pizza(DefaultCrustSize, DefaultCrustType)
-  val p2 = new Pizza(DefaultCrustSize)
-  val p3 = new Pizza(DefaultCrustType)
-  val p4 = new Pizza
+//  val p1 = new Pizza(DefaultCrustSize, DefaultCrustType)
+//  val p2 = new Pizza(DefaultCrustSize)
+//  val p3 = new Pizza(DefaultCrustType)
+//  val p4 = new Pizza
 
   val s1 = new Socket()
   val s2 = new Socket(1000)
@@ -22,22 +22,22 @@ object Classes extends App {
 class Person(var firstName: String, var lastName: String)
 
 // Using auxillary class constructors
-class Pizza(var crustSize: Int, var crustType: String) {
-  val DefaultCrustSize = 12
-  val DefaultCrustType = "THIN"
-
-  def this(crustSize: Int) {
-    this(crustSize, DefaultCrustType)
-  }
-
-  def this(crustType: String) {
-    this(DefaultCrustSize, crustType)
-  }
-
-  def this() {
-    this(DefaultCrustSize, DefaultCrustType)
-  }
-}
+//class Pizza(var crustSize: Int, var crustType: String) {
+//  val DefaultCrustSize = 12
+//  val DefaultCrustType = "THIN"
+//
+//  def this(crustSize: Int) {
+//    this(crustSize, DefaultCrustType)
+//  }
+//
+//  def this(crustType: String) {
+//    this(DefaultCrustSize, crustType)
+//  }
+//
+//  def this() {
+//    this(DefaultCrustSize, DefaultCrustType)
+//  }
+//}
 
 // Constructor default params
 class Socket(var timeout: Int = 2000, var linger: Int = 3000) {
